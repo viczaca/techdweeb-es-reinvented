@@ -1,6 +1,7 @@
 <theme>
    <formatVersion>7</formatVersion>
    <variables ifSubset="color-scheme:orange|custom">
+      <systemColorName>orange</systemColorName>
       <systemLogoColor>ffffff</systemLogoColor>
       <systemBackgroundImage>./_inc/images/system-view/orange.png</systemBackgroundImage>
       <systemBackgroundImageColor>ffffff</systemBackgroundImageColor>
@@ -30,6 +31,7 @@
       <splashProgressBarActiveColor>ff7300</splashProgressBarActiveColor>
    </variables>
    <variables ifSubset="color-scheme:purple">
+      <systemColorName>purple</systemColorName>
       <systemLogoColor>ffffff</systemLogoColor>
       <systemBackgroundImage>./_inc/images/system-view/purple.png</systemBackgroundImage>
       <systemBackgroundImageColor>ffffff</systemBackgroundImageColor>
@@ -59,6 +61,7 @@
       <splashProgressBarActiveColor>ff00ea</splashProgressBarActiveColor>
    </variables>
    <variables ifSubset="color-scheme:cyan">
+      <systemColorName>cyan</systemColorName>
       <systemLogoColor>ffffff</systemLogoColor>
       <systemBackgroundImage>./_inc/images/system-view/cyan.png</systemBackgroundImage>
       <systemBackgroundImageColor>ffffff</systemBackgroundImageColor>
@@ -88,6 +91,7 @@
       <splashProgressBarActiveColor>00ffea</splashProgressBarActiveColor>
    </variables>
    <variables ifSubset="color-scheme:green">
+      <systemColorName>green</systemColorName>
       <systemLogoColor>ffffff</systemLogoColor>
       <systemBackgroundImage>./_inc/images/system-view/green.png</systemBackgroundImage>
       <systemBackgroundImageColor>ffffff</systemBackgroundImageColor>
@@ -117,6 +121,7 @@
       <splashProgressBarActiveColor>c8ed00</splashProgressBarActiveColor>
    </variables>
    <variables ifSubset="color-scheme:pink">
+      <systemColorName>pink</systemColorName>
       <systemLogoColor>ffffff</systemLogoColor>
       <systemBackgroundImage>./_inc/images/system-view/pink.png</systemBackgroundImage>
       <systemBackgroundImageColor>ffffff</systemBackgroundImageColor>
@@ -146,6 +151,7 @@
       <splashProgressBarActiveColor>ff5364</splashProgressBarActiveColor>
    </variables>
    <variables ifSubset="color-scheme:blue">
+      <systemColorName>blue</systemColorName>
       <systemLogoColor>ffffff</systemLogoColor>
       <systemBackgroundImage>./_inc/images/system-view/blue.png</systemBackgroundImage>
       <systemBackgroundImageColor>ffffff</systemBackgroundImageColor>
@@ -175,6 +181,7 @@
       <splashProgressBarActiveColor>0059ee</splashProgressBarActiveColor>
    </variables>
    <variables ifSubset="color-scheme:red">
+      <systemColorName>red</systemColorName>
       <systemLogoColor>ffffff</systemLogoColor>
       <systemBackgroundImage>./_inc/images/system-view/red.png</systemBackgroundImage>
       <systemBackgroundImageColor>ffffff</systemBackgroundImageColor>
@@ -204,6 +211,7 @@
       <splashProgressBarActiveColor>f60033</splashProgressBarActiveColor>
    </variables>
    <variables ifSubset="color-scheme:grey">
+      <systemColorName>grey</systemColorName>
       <systemLogoColor>ffffff</systemLogoColor>
       <systemBackgroundImage>./_inc/images/system-view/grey.png</systemBackgroundImage>
       <systemBackgroundImageColor>ffffff</systemBackgroundImageColor>
@@ -233,6 +241,7 @@
       <splashProgressBarActiveColor>909090</splashProgressBarActiveColor>
    </variables>
    <variables ifSubset="color-scheme:dmg">
+      <systemColorName>dmg</systemColorName>
       <systemLogoColor>ffffff</systemLogoColor>
       <systemBackgroundImage>./_inc/images/system-view/dmg.png</systemBackgroundImage>
       <systemBackgroundImageColor>ffffff</systemBackgroundImageColor>

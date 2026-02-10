@@ -100,6 +100,39 @@ https://github.com/anthonycaccese/techdweeb-es-de
 
    <!--
    ///
+   Subset: System View
+   ///
+   -->
+   <subset name="system-view" displayName="System View">
+      <include name="simple" displayName="Simple"/>
+      <include name="detailed" displayName="Detailed"/>
+   </subset>
+
+   <!--
+   ///
+   Subset: System Background
+   ///
+   -->
+   <subset name="system-background" displayName="Background" appliesTo="system">
+      <include name="default" displayName="Default" />
+      <include name="fanart" displayName="Random Fanart" />
+      <include name="image" displayName="Random Image" />
+      <include name="gamebox" displayName="Random Game Box" />
+      <include name="video" displayName="Random Video" />
+   </subset>
+
+   <!--
+   ///
+   Subset: Release Year
+   ///
+   -->
+   <subset name="release-year" displayName="Release Year" appliesTo="system">
+       <include name="off" displayName="Off" />
+       <include name="on" displayName="On" />
+   </subset>
+
+   <!--
+   ///
    Subset: Gamelist Artwork
    ///
    -->
@@ -183,82 +216,9 @@ https://github.com/anthonycaccese/techdweeb-es-de
    System View
    ///
    -->
-   <view name="system">
-      <!-- Start: Resets -->
-      <text name="systemInfo">
-         <visible>false</visible>
-         <color>00000000</color>
-      </text>
-      <!-- End: Resets -->
-      <image name="system-background" extra="true">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <minSize>1 1</minSize>
-         <path>${systemBackgroundImage}</path>
-         <color>${systemBackgroundImageColor}</color>
-         <zIndex>1</zIndex>
-      </image>
-      <image name="logo">
-         <path>./_inc/systems/logos/${system.theme}.png</path>
-      </image>
-      <carousel name="systemcarousel">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
-         <size>1 1</size>
-         <type>horizontal</type>
-         <color>00000000</color>
-         <logoScale>1</logoScale>
-         <maxLogoCount>1</maxLogoCount>
-         <defaultTransition>fade & slide</defaultTransition>
-         <zIndex>2</zIndex>
-         <itemTemplate>
-            <container>
-               <image name="system-logo">
-                  <pos>0.5 0.5</pos>
-                  <origin>0.5 0.5</origin>
-                  <maxSize>1 1</maxSize>
-                  <path>{system:logo}</path>
-               </image>
-               <text name="system-name">
-                  <text>{system:fullName}</text>
-                  <fontPath>${logoFont}</fontPath>
-                  <fontSize>0.15</fontSize><!-- 72 -->
-                  <lineSpacing>0.75</lineSpacing>
-                  <forceUppercase>true</forceUppercase>
-                  <color>${systemLogoColor}</color>
-                  <alignment>center</alignment>
-                  <multiLine>true</multiLine>
-                  <visible>!exists({system:logo})</visible>
-               </text>
-             </container>
-          </itemTemplate>
-      </carousel>
-      <!-- Start: System Count -->
-      <text name="system-count,system-count-single,system-count-null" extra="true" ifSubset="system-count:on">
-         <origin>0.5 0.5</origin>
-         <pos>0.5 0.8</pos>
-         <size>0 0.05</size>
-         <alignment>center</alignment>
-         <fontSize>0.041666666666667</fontSize>
-         <fontSize ifSubset="font-size:small|default">0.075</fontSize><!-- 36 -->
-         <fontSize ifSubset="font-size:large">0.1</fontSize><!-- 48 -->
-         <fontPath>${logoFont}</fontPath>
-         <color>ffffff</color>
-      </text>
-      <text name="system-count" extra="true" ifSubset="system-count:on">
-         <text>{system:total} Games</text>
-         <visible>{system:total} &gt; 1 ? 1 : 0</visible>
-      </text>
-      <text name="system-count-single" extra="true" ifSubset="system-count:on">
-         <text>1 Game</text>
-         <visible>{system:total} == 1 ? 1 : 0</visible>
-      </text>
-      <text name="system-count-null" extra="true" ifSubset="system-count:on">
-         <text>0 Games</text>
-         <visible>{system:total} == 0 ? 1 : 0</visible>
-      </text>
-      <!-- End: System Count -->
-   </view>
+   <include ifSubset="system-view:simple">./subsets/systemview/simple.xml</include>
+   <include ifSubset="system-view:detailed">./subsets/systemview/detailed.xml</include>
+
 
    <!--
    ///
